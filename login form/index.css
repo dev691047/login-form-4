@@ -1,0 +1,189 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Chango&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Blinker:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+body{
+      background-image:url("./images/bg-intro-desktop.png") ;
+      background-color:rgba(253, 80, 0, 0.726);
+      font-family: 'Blinker', sans-serif;
+}
+nav{
+    max-width: 1440px;
+    margin:0 auto;
+    padding-top: 5px;
+    height: 45px;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.nav-div{
+    border:1px solid rgb(235, 235, 235);
+    width:40px;
+    height:35px;
+    border-radius: 5px;
+    padding-top: 2px;
+    visibility: hidden;
+    
+}
+
+.nav-div div{
+    height:3px;
+    width:30px;
+    background-color: rgb(250, 250, 250);
+    margin:5px auto;
+   
+}
+.navbar-brand{
+   
+    color:white;
+    font-size: 35px;
+    font-family: 'Chango', cursive;
+}
+
+
+main{
+    max-width: 1440px;
+    margin:auto;
+}
+.container{
+   max-width:400px;
+    background-color: white;
+    position: relative;
+    margin:auto;
+    margin-top:15px;
+    padding-top: 20px;
+    border-radius:5px;
+    box-shadow: 0 0 10px rgb(100, 3, 3);
+}
+.heading{
+    height:50px;
+    border:1px solid red;
+    margin-bottom: 20px;
+    background-color: hsl(248, 32%, 49%);
+    color:white;
+    max-width:400px;
+    margin:0 auto;
+    margin-top: 100px;
+    box-shadow: 0 0 10px rgb(100, 3, 3);
+    border-radius:5px;
+    text-align: center;
+    border-color: rgb(29, 29, 29);
+}
+h3{
+    margin-top: 10px;
+    letter-spacing: 0.45px;
+}
+
+.form-control{
+    position:relative;
+    padding:0 15px 30px 15px;
+}
+.form-control input{
+    display: block;
+    width:100%;
+    height:45px;
+    border-radius: 5px;
+    border:0.1px solid  rgb(165, 165, 165);
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+.form-control i{
+    position:absolute;
+    top:15px;
+    right:23px;
+    visibility: hidden;
+}
+.form-control label{
+    position:absolute;
+    top:15px;
+    left:25px;
+    font-family: 'Blinker', sans-serif;
+   font-weight: 600;
+   font-size: 13px;
+   color:rgb(92, 92, 92)
+  
+
+}
+::placeholder {
+    color: rgb(156, 154, 154);
+    font-size: 13px;
+    position: absolute;
+    top:12px;
+    left:10px;
+    font-size: 15px;
+   letter-spacing: 1px;
+  }
+
+
+.form-control small{
+    position: absolute;
+    right:20px;
+    margin-top: 2px;
+    visibility: hidden;
+    font-weight: 400;
+    color:red;
+}
+
+form button{
+    width:95%;
+    margin:5px 7px;
+    height:45px;
+    margin-bottom: 15px;
+    background-color: hsl(154, 59%, 51%) ;
+    border:none;
+    border-radius:5px;
+    color:white;
+    font-size: 20px;
+    box-shadow: 0 0 5px rgb(180, 179, 179);
+    font-weight: 600;
+}
+.form-control.success input{
+    border:2px solid rgb(29, 202, 29);
+
+}
+.form-control.error input{
+    border:2px solid rgb(255, 101, 101);
+
+}
+.form-control.error small{
+    visibility: visible;
+}
+.form-control.error i.fa-exclamation-circle{
+    visibility: visible;
+    color:rgb(230, 86, 86);
+}
+.form-control.success i.fa-check-circle{
+    color: rgb(29, 202, 29);
+    visibility:visible;
+
+}
+
+
+
+@media(max-width:700px){
+    .container{
+        width:90%;
+        box-shadow: 0 0 20px rgb(100, 3, 3);
+    }
+    .heading{
+        width:90%;
+        box-shadow: 0 0 20px rgb(100, 3, 3);
+    }
+    body{
+        background-image: url("./images/bg-intro-mobile.png");
+    }
+ 
+    .nav-div{
+        visibility: visible;
+    }
+    .navbar-brand{
+        font-size: 25px;
+    }
+}
